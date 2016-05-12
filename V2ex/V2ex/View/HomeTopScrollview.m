@@ -45,6 +45,7 @@
             button.layer.cornerRadius = V2exCorn;
             button.clipsToBounds = YES;
             [button setTitle:@"你好" forState:UIControlStateNormal];
+            button.titleLabel.font = [UIFont v2exFont:DeaultFont];
             [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
             [button setBackgroundImage:[UIImage imageWithColor:@"255,255,255,1"] forState:UIControlStateNormal];

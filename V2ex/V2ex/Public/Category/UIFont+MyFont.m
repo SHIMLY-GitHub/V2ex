@@ -9,5 +9,9 @@
 #import "UIFont+MyFont.h"
 
 @implementation UIFont (MyFont)
-
++(UIFont*) v2exFont:(FontType) type{
+    
+  
+    return [UIFont fontWithName:DefaultFont size:17];
+}
 @end

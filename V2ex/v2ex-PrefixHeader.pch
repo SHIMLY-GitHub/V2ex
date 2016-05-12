@@ -10,6 +10,8 @@
 #import "Masonry.h"
 #import "UIColor+MyColor.h"
 #import "UIImage+ViewImage.h"
+#import "NSString+MyNSString.h"
+#import "UIFont+MyFont.h"
 #ifndef v2ex_PrefixHeader_pch
 #define v2ex_PrefixHeader_pch
 

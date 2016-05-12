@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef enum
+{
+    DeaultFont                = 0,
+    FontScrollowItemFont      = 1
+    
+    
+} FontType;
 @interface UIFont (MyFont)
++(UIFont*) v2exFont:(FontType) type;
 
 @end

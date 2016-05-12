@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "HomeTopScrollview.h"
+#import "HomeTableView.h"
 
 @interface ViewController ()
 
 @property(nonatomic,strong) HomeTopScrollview * topScrollowView;
+@property(nonatomic,strong) HomeTableView     * homeTableView;
 @end
 
 @implementation ViewController
@@ -24,7 +26,7 @@
 }
 -(void)initView
 {
- 
+   
     
     _topScrollowView = [[HomeTopScrollview alloc] init];
     
@@ -35,6 +37,16 @@
         make.left.mas_equalTo(10);
         make.right.mas_equalTo(-10);
         make.height.mas_equalTo(40);
+    }];
+    _homeTableView = [[HomeTableView alloc] init];
+    [self.view addSubview:_homeTableView];
+    [_homeTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.mas_equalTo(self.topScrollowView.mas_bottom).offset(10);
+        make.left.mas_equalTo(self.topScrollowView);
+        make.right.mas_equalTo(self.topScrollowView);
+        make.bottom.mas_equalTo(self.view);
+        
     }];
     
     
