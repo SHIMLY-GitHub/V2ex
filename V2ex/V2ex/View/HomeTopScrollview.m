@@ -39,18 +39,29 @@
         NSMutableArray * array = [NSMutableArray array];
         for (NSInteger i=0;i<12; i++) {
             
-            ItemCell * cell = [[ItemCell alloc] init];
-            [cell itemCellTitle:@"你好"];
-            [_contentView addSubview:cell];
-            [array addObject:cell];
+            UIButton * button = [[UIButton alloc] init];
+            button.selected = NO;
+            button.layer.cornerRadius = V2exCorn;
+            button.clipsToBounds = YES;
+            [button setTitle:@"你好" forState:UIControlStateNormal];
+            [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+            [button setBackgroundImage:[UIImage imageWithColor:@"255,255,255,1"] forState:UIControlStateNormal];
+            [button setBackgroundImage:[UIImage imageWithColor:@"51,51,69,1"] forState:UIControlStateSelected];
+            
+            [button addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventTouchUpInside];
+            [_contentView addSubview:button];
+            [array addObject:button];
+            
+          
             
         }
         
         NSInteger i=0;
         CGFloat width = 60;
     
-        ItemCell * lastView = nil;
-        for (ItemCell * view in array) {
+        UIButton * lastView = nil;
+        for (UIButton * view in array) {
            [view mas_makeConstraints:^(MASConstraintMaker *make) {
                make.top.mas_equalTo(5);
                make.bottom.mas_equalTo(-5);
@@ -69,6 +80,22 @@
     }
     
     return self;
+}
+-(void)selectButton:(UIButton*) button{
+    [self clearButton];
+    button.selected = !button.selected;
+}
+-(void)clearButton
+{
+    for (id object in self.contentView.subviews) {
+        if ([object isKindOfClass:[UIButton class]]) {
+            
+            UIButton * button = (UIButton*)object;
+            button.selected = NO;
+        }
+        
+        
+    }
 }
 
 @end

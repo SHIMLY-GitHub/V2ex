@@ -19,6 +19,9 @@
 		54B2439A1CE4184800C44EA5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243991CE4184800C44EA5 /* BaseViewController.m */; };
 		54B243B01CE446CF00C44EA5 /* HomeTopScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243AF1CE446CF00C44EA5 /* HomeTopScrollview.m */; };
 		54B243B41CE45CB000C44EA5 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243B31CE45CB000C44EA5 /* ItemCell.m */; };
+		54B243B71CE4673C00C44EA5 /* UIImage+ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243B61CE4673C00C44EA5 /* UIImage+ViewImage.m */; };
+		54B243BA1CE467A500C44EA5 /* NSString+MyNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243B91CE467A500C44EA5 /* NSString+MyNSString.m */; };
+		54B243BD1CE468A100C44EA5 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243BC1CE468A100C44EA5 /* UIColor+MyColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,12 @@
 		54B243AF1CE446CF00C44EA5 /* HomeTopScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTopScrollview.m; sourceTree = "<group>"; };
 		54B243B21CE45CB000C44EA5 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		54B243B31CE45CB000C44EA5 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		54B243B51CE4673C00C44EA5 /* UIImage+ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ViewImage.h"; sourceTree = "<group>"; };
+		54B243B61CE4673C00C44EA5 /* UIImage+ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ViewImage.m"; sourceTree = "<group>"; };
+		54B243B81CE467A500C44EA5 /* NSString+MyNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyNSString.h"; sourceTree = "<group>"; };
+		54B243B91CE467A500C44EA5 /* NSString+MyNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MyNSString.m"; sourceTree = "<group>"; };
+		54B243BB1CE468A100C44EA5 /* UIColor+MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MyColor.h"; sourceTree = "<group>"; };
+		54B243BC1CE468A100C44EA5 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
 		700A4D86B0AA9022C59F26DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE79691AB2F3C0584209867 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +210,12 @@
 			isa = PBXGroup;
 			children = (
 				54B243A31CE41D3600C44EA5 /* defineHeader.h */,
+				54B243B51CE4673C00C44EA5 /* UIImage+ViewImage.h */,
+				54B243B61CE4673C00C44EA5 /* UIImage+ViewImage.m */,
+				54B243B81CE467A500C44EA5 /* NSString+MyNSString.h */,
+				54B243B91CE467A500C44EA5 /* NSString+MyNSString.m */,
+				54B243BB1CE468A100C44EA5 /* UIColor+MyColor.h */,
+				54B243BC1CE468A100C44EA5 /* UIColor+MyColor.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -413,6 +428,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B243B41CE45CB000C44EA5 /* ItemCell.m in Sources */,
+				54B243BA1CE467A500C44EA5 /* NSString+MyNSString.m in Sources */,
+				54B243B71CE4673C00C44EA5 /* UIImage+ViewImage.m in Sources */,
+				54B243BD1CE468A100C44EA5 /* UIColor+MyColor.m in Sources */,
 				54B2436C1CE4161800C44EA5 /* ViewController.m in Sources */,
 				54B2439A1CE4184800C44EA5 /* BaseViewController.m in Sources */,
 				54B243691CE4161800C44EA5 /* AppDelegate.m in Sources */,

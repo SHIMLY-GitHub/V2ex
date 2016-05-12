@@ -14,7 +14,11 @@
 #define kScreenBoundHeight [UIScreen mainScreen].bounds.size.height
 
 #define kStatusHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-
+#define DefaultCellBackgroundColor @"44,167,234,0.75"
+#define DefaultFont                @"Heiti SC"
+#define DefaultFontItalic          @"Heiti SC"
+#define DefaultFontBold            @"STHeitiSC-Medium"
+#define V2exCorn                  5
 
 //判断pad 还是 iphone
 #define isPad  [UIDevice currentDevice].userInterfaceIdiom==UIUserInterfaceIdiomPad

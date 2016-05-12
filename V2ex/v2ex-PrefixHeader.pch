@@ -8,6 +8,8 @@
 
 #import "defineHeader.h"
 #import "Masonry.h"
+#import "UIColor+MyColor.h"
+#import "UIImage+ViewImage.h"
 #ifndef v2ex_PrefixHeader_pch
 #define v2ex_PrefixHeader_pch
 
