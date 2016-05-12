@@ -24,8 +24,8 @@
 }
 -(void)initBaseView
 {
-    self.view.backgroundColor = [UIColor whiteColor];
-   ;
+    self.view.backgroundColor = [UIColor color:@"226,226,226,1"];
+   
     
    
 }

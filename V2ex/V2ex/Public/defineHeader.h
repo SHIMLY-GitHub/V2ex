@@ -18,7 +18,7 @@
 #define DefaultFont                @"Heiti SC"
 #define DefaultFontItalic          @"Heiti SC"
 #define DefaultFontBold            @"STHeitiSC-Medium"
-#define V2exCorn                  5
+#define V2exCorn                  2
 
 //判断pad 还是 iphone
 #define isPad  [UIDevice currentDevice].userInterfaceIdiom==UIUserInterfaceIdiomPad

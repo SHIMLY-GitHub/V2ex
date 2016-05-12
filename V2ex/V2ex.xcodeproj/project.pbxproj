@@ -18,7 +18,6 @@
 		54B2438A1CE4161800C44EA5 /* V2exUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243891CE4161800C44EA5 /* V2exUITests.m */; };
 		54B2439A1CE4184800C44EA5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243991CE4184800C44EA5 /* BaseViewController.m */; };
 		54B243B01CE446CF00C44EA5 /* HomeTopScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243AF1CE446CF00C44EA5 /* HomeTopScrollview.m */; };
-		54B243B41CE45CB000C44EA5 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243B31CE45CB000C44EA5 /* ItemCell.m */; };
 		54B243B71CE4673C00C44EA5 /* UIImage+ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243B61CE4673C00C44EA5 /* UIImage+ViewImage.m */; };
 		54B243BA1CE467A500C44EA5 /* NSString+MyNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243B91CE467A500C44EA5 /* NSString+MyNSString.m */; };
 		54B243BD1CE468A100C44EA5 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B243BC1CE468A100C44EA5 /* UIColor+MyColor.m */; };
@@ -65,8 +64,6 @@
 		54B243A41CE41E1900C44EA5 /* v2ex-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "v2ex-PrefixHeader.pch"; path = "../v2ex-PrefixHeader.pch"; sourceTree = "<group>"; };
 		54B243AE1CE446CF00C44EA5 /* HomeTopScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTopScrollview.h; sourceTree = "<group>"; };
 		54B243AF1CE446CF00C44EA5 /* HomeTopScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTopScrollview.m; sourceTree = "<group>"; };
-		54B243B21CE45CB000C44EA5 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
-		54B243B31CE45CB000C44EA5 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		54B243B51CE4673C00C44EA5 /* UIImage+ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ViewImage.h"; sourceTree = "<group>"; };
 		54B243B61CE4673C00C44EA5 /* UIImage+ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ViewImage.m"; sourceTree = "<group>"; };
 		54B243B81CE467A500C44EA5 /* NSString+MyNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyNSString.h"; sourceTree = "<group>"; };
@@ -185,7 +182,6 @@
 		54B2439B1CE419B000C44EA5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				54B243B11CE45C6200C44EA5 /* Cell */,
 				54B243AE1CE446CF00C44EA5 /* HomeTopScrollview.h */,
 				54B243AF1CE446CF00C44EA5 /* HomeTopScrollview.m */,
 			);
@@ -218,15 +214,6 @@
 				54B243BC1CE468A100C44EA5 /* UIColor+MyColor.m */,
 			);
 			path = Public;
-			sourceTree = "<group>";
-		};
-		54B243B11CE45C6200C44EA5 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				54B243B21CE45CB000C44EA5 /* ItemCell.h */,
-				54B243B31CE45CB000C44EA5 /* ItemCell.m */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		991457CA96D7BC1DD742BC87 /* Pods */ = {
@@ -427,7 +414,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B243B41CE45CB000C44EA5 /* ItemCell.m in Sources */,
 				54B243BA1CE467A500C44EA5 /* NSString+MyNSString.m in Sources */,
 				54B243B71CE4673C00C44EA5 /* UIImage+ViewImage.m in Sources */,
 				54B243BD1CE468A100C44EA5 /* UIColor+MyColor.m in Sources */,

@@ -32,8 +32,8 @@
 
     [_topScrollowView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(kStatusHeight);
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
         make.height.mas_equalTo(40);
     }];
     

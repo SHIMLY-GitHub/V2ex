@@ -7,7 +7,7 @@
 //
 
 #import "HomeTopScrollview.h"
-#import "ItemCell.h"
+
 
 @interface HomeTopScrollview()
 
@@ -21,7 +21,7 @@
     self = [super initWithFrame: frame];
     if (self) {
         _scrollow = [[UIScrollView alloc] init];
-       
+        _scrollow.backgroundColor = [UIColor whiteColor];
         _scrollow.showsHorizontalScrollIndicator = NO;
         [self addSubview:_scrollow];
         
@@ -40,7 +40,8 @@
         for (NSInteger i=0;i<12; i++) {
             
             UIButton * button = [[UIButton alloc] init];
-            button.selected = NO;
+           
+            button.selected = i==0 ? YES : NO;
             button.layer.cornerRadius = V2exCorn;
             button.clipsToBounds = YES;
             [button setTitle:@"你好" forState:UIControlStateNormal];
@@ -52,9 +53,6 @@
             [button addTarget:self action:@selector(selectButton:) forControlEvents:UIControlEventTouchUpInside];
             [_contentView addSubview:button];
             [array addObject:button];
-            
-          
-            
         }
         
         NSInteger i=0;
