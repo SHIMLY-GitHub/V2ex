@@ -10,4 +10,5 @@
 
 @interface BaseViewController : UIViewController
 -(void)initBaseNavigation;
+@property(nonatomic,assign) CGFloat baseHeight;
 @end

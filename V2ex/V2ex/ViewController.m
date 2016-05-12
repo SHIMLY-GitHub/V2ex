@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -16,8 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initView];
+    [self.navigationController.navigationBar setHidden:YES];
    
 }
+-(void)initView
+{
+    self.automaticallyAdjustsScrollViewInsets = NO;
+   
+  
+ 
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

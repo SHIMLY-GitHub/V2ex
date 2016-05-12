@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "AppDelegate.h"
 
 @interface BaseViewController ()
 
@@ -19,14 +20,19 @@
     [self initBaseView];
     [self initBaseNavigation];
     
+    
 }
 -(void)initBaseView
 {
     self.view.backgroundColor = [UIColor whiteColor];
+   ;
     
+   
 }
 -(void) initBaseNavigation
 {
+   
+  
     
 }
 
