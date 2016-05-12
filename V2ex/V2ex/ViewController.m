@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
-
+#import "HomeTopScrollview.h"
 
 @interface ViewController ()
 
+@property(nonatomic,strong) HomeTopScrollview * topScrollowView;
 @end
 
 @implementation ViewController
@@ -23,10 +24,19 @@
 }
 -(void)initView
 {
-    self.automaticallyAdjustsScrollViewInsets = NO;
-   
-  
  
+    
+    _topScrollowView = [[HomeTopScrollview alloc] init];
+    
+    [self.view addSubview:_topScrollowView];
+
+    [_topScrollowView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(kStatusHeight);
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.height.mas_equalTo(40);
+    }];
+    
     
 }
 
