@@ -28,6 +28,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.estimatedRowHeight = 100;
         
     }
     
