@@ -10,4 +10,6 @@
 
 @interface UIImage (ViewImage)
 + (UIImage*) imageWithColor:(NSString*)color;
+
++(UIImage * ) markImageWithString:(NSString*) string;
 @end

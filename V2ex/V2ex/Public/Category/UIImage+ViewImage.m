@@ -25,8 +25,29 @@
     return image;
 }
 
++(UIImage * ) markImageWithString:(NSString*) string
+{
+    
+    UIView * view = [self markImageViewWithString:string];
+    
+    return [self getImageFromView:view];
+    
+}
 
--(UIImage *)getImageFromView:(UIView *)orgView{
++(UIView*) markImageViewWithString:(NSString*) string
+{
+    UILabel * label = [[UILabel alloc] init];
+    label.bounds = CGRectMake(0, 0, 30, 15);
+    label.text = string;
+    label.font = [UIFont systemFontOfSize:10];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor blackColor];
+    
+    return label;
+}
+
+
++(UIImage *)getImageFromView:(UIView *)orgView{
     UIGraphicsBeginImageContext(orgView.bounds.size);
     [orgView.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();

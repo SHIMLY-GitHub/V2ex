@@ -10,7 +10,12 @@
 typedef enum
 {
     DeaultFont                = 0,
-    FontScrollowItemFont      = 1
+    FontScrollowItemFont      = 1,
+    MarkLabelFont             = 2,
+    AuthorLabelFont           = 3,
+    TimeLableFont             = 4,
+    FinalLableFont            = 5,
+    MessageCountFont          = 6
     
     
 } FontType;
